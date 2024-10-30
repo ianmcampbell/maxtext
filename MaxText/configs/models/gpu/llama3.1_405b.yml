@@ -13,5 +13,5 @@ scan_layers: True
 dataset_type: "synthetic"
 async_checkpointing: False
 logits_dot_in_fp32: False
-per_device_batch_size: 0.125
+per_device_batch_size: 1.0
 max_target_length: 4096
