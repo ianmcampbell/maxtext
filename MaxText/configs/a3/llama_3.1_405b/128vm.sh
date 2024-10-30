@@ -30,7 +30,7 @@ export XLA_FLAGS="--xla_dump_to=$OUTPUT_PATH/$RUN_NAME/HLO_dumps/
 --xla_disable_hlo_passes=rematerialization"
 
 # 128 nodes
-python MaxText/$EXECUTABLE MaxText/configs/models/gpu/llama3.1_405b.yml run_name=$RUN_NAME \
+python MaxText/$EXECUTABLE MaxText/configs/models/llama3.1_405b.yml run_name=$RUN_NAME \
     base_config=base.yml \
     run_name=gpu_train_test \
     hardware=gpu \
