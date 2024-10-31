@@ -1,9 +1,12 @@
 echo "Running 128vm.sh"
 # Example command to invoke this script via XPK, assume you've installed xpk
+# COMMAND="bash MaxText/configs/a3/llama_3.1_405b/128vm.sh"
+# COMMAND='export LD_LIBRARY_PATH=/usr/local/cuda-12.6/compat:$LD_LIBRARY_PATH;'"${COMMAND}"; 
+# 
 # xpk workload create --project=${PROJECT}--cluster=${CLUSTER_NAME} --zone=${ZONE} \
 # --workload=${WORKLOAD_NAME} --docker-image=gcr.io/supercomputer-testing/${LOCAL_IMAGE_NAME} \
 # --device-type=${DEVICE_TYPE} --num-nodes=2 --priority=high \
-# --command="bash MaxText/configs/a3/llama_3.1_405b/128vm.sh" --env=XLA_FLAGS=$XLA_FLAGS
+# --command="$COMMAND" --env=XLA_FLAGS=$XLA_FLAGS
 
 # Stop execution if any command exits with error
 set -e
